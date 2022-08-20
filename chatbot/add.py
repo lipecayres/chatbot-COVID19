@@ -1,23 +1,26 @@
-from flask import Flask, request
-from twilio.twiml.messaging_response import MessagingResponse
+from chatterbot import ChatBot
+from chatterbot.trainers import ListTrainer
+from chatterbot.trainers import ChatterBotCorpusTrainer
 
-app = Flask(__name__)
+# Creating ChatBot Instance
+chatbot = ChatBot('CoronaBot')
 
-@app.route("/")
-def hello():
-    return "Hello, World!"
+ # Training with Personal Ques & Ans 
+conversation = [
+    "Hello",
+    "Hi there!",
+    "How are you doing?",
+    "I'm doing great.",
+    "That is good to hear",
+    "Thank you.",
+    "You're welcome."
+]
 
-@app.route("/sms", methods=['POST'])
-def sms_reply():
-    """Respond to incoming calls with a simple text message."""
-    # Fetch the message
-    msg = request.form.get('Body')
+trainer = ListTrainer(chatbot)
+trainer.train(conversation)
 
-    # Create reply
-    resp = MessagingResponse()
-    resp.message("You said: {}".format(msg))
-
-    return str(resp)
-
-if __name__ == "__main__":
-    app.run(debug=True)
+# Training with English Corpus Data 
+trainer_corpus = ChatterBotCorpusTrainer(chatbot)
+trainer_corpus.train(
+    'chatterbot.corpus.english'
+) 
