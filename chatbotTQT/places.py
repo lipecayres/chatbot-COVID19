@@ -1,4 +1,3 @@
-from chatbotCOVID19.chatbotTQT.menu import intEntry
 import menu
 
 def places():
@@ -9,7 +8,7 @@ def places():
     print("1- Testagem")
     print("2- Vacinação")
 
-    cursor = intEntry()
+    cursor = menu.intEntry()
 
     if cursor == 1:
         print()
