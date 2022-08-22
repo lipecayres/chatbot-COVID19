@@ -25,3 +25,9 @@ def register ():
             print("Senha inválida. Minímo de 6 dígitos.")
 
     print("Legal. Agora você pode conferir o seu laudo digital!")
+    print()
+    print("Acesse este link que você poderá verificar os seus resultados:")
+    print()
+    print("https://tqtcovid.com/m03_prontuario_individual/")
+    print()
+    menu.endChat()
