@@ -9,6 +9,4 @@ def start():
     menu.menu()
 
 
-
-
 start()

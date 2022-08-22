@@ -27,13 +27,13 @@ def menu():
     if cursor == 1:
         news.news()
     elif cursor == 2:
-        survey()
+        survey.survey()
     elif cursor == 3:
-        places() 
+        places.places() 
     elif cursor == 4:
-        register() 
+        register.register() 
     elif cursor == 5:
-        doubts() 
+        doubts.doubts() 
     else:
         print()
         print("Entrada inválida, tente novamente.")
