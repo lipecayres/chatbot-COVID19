@@ -11,8 +11,8 @@ def survey():
         print()
         print("Há quanto tempo?")
         print()
-        print("1- De 1 a 3 dias")
-        print("2- Mais de 3 dias")
+        print("1- De 1 a 3 dias!")
+        print("2- Mais de 3 dias!")
 
         cursor = menu.intEntry()
         if cursor == 1:
