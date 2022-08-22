@@ -44,7 +44,7 @@ def menu():
 
 def intEntry():
     while True:
-        n = input("Digite:")    
+        n = input("Digite: ")    
         try:
             n = int(n)
             break
