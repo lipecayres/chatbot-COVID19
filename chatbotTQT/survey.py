@@ -11,13 +11,20 @@ def survey():
         print()
         print("Há quanto tempo?")
         print()
+        print("1- De 1 a 3 dias")
+        print("2- Mais de 3 dias")
 
         cursor = menu.intEntry()
         if cursor == 1:
-            print("1- De 1 a 3 dias")
+            print()
+            print("Segundo o Ministério da Saúde, o adequado é realizar a testagem entre 3 a 7 dias.")
+            print("Aguarda o prazo e fala comigo de novo!")
+            menu.endChat()
 
         elif cursor == 2:
-            print("2- Mais de 3 dias")
+            print("Por favor, dirija-se para uma unidade de saúde e faça seu teste de COVID-19")
+            print("Aqui você pode encontrar os locais disponíveis para testagem:")
+            menu.places()
 
         else:
             print("Resposta inválida. Vamos tentar de novo!")
