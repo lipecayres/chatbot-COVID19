@@ -7,15 +7,16 @@ def register ():
     print("Pra isso vou precisar que você digite o seu CPF e sua senha")
     print()
     print("Seu login e senha estão no seu termo de assentimento com a participação no projeto!")
-
+    print()
+    
     print("Digite o seu cpf (só numeros):")
 
     while True:
         cpf = menu.intEntry()
-            if len(cpf) == 11
-                break
-            else:
-                print("CPF inválido. Tente novamente.")
+        if len(cpf) == 11:
+            break
+        else:
+            print("CPF inválido. Tente novamente.")
     
     while True:
         key = input("Senha: ")
