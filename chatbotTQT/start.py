@@ -1,15 +1,12 @@
 ### Chatbot TQT COVID-19 ###
 
-import news
-import places
-import questions
-import register
-import survey
+import menu
+
 
 def start():
-    intro()
 
-
+    menu.opening()
+    menu.menu()
 
 
 
