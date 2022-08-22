@@ -17,7 +17,7 @@ def news():
         print("Aqui você pode ver as noticias no mundo:")
         print("https://www.google.com/search?rlz=1C1FCXM_pt-PTBR993BR993&source=lnms&tbm=nws&sa=X&ved=2ahUKEwj00eW1itv5AhWwhJUCHee8An0Q_AUoAXoECAIQAw&q=coronav%C3%ADrus&biw=1536&bih=656&dpr=1.25")
         print()
-        print("No site da SMS Salvador você acompanha as noticias pelo site da Secretaria de saúde:")
+        print("No site da SMS Salvador você acompanha todas as noticias pelo site da Secretaria de saúde:")
         print("http://www.saude.salvador.ba.gov.br/")
         print()
         print("Você pode também acompanhar pelo instagram: @smssalvador")
