@@ -8,4 +8,5 @@ def doubts ():
     print("Instagram: @tqtcovid")
     print("Site: www.tqtcovid.com")
     print()
+    print()
     menu.endChat()
