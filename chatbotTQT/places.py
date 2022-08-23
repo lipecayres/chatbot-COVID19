@@ -4,9 +4,9 @@ def places():
     print()
     print("Você quer saber sobre testagem ou vacinação?")
     print()
-    print()
     print("1- Testagem")
     print("2- Vacinação")
+    print()
 
     cursor = menu.intEntry()
 
@@ -14,8 +14,10 @@ def places():
         print()
         print("Você consegue acompanhar diariamente no card da Secretaria de Saúde e da Prefeitura no instagram!")
         print("Confere lá:")
+        print()
         print("Secretaria @smssalvador")
         print("Prefeitura: @prefsalvador")
+        print()
         print()
         menu.endChat()
 
@@ -26,8 +28,10 @@ def places():
         print()
         print("http://www.saude.salvador.ba.gov.br/vacinacao-covid/")
         print()
+        print()
         menu.endChat()
 
     else:
+        print()
         print("Resposta inválida. Vamos tentar de novo!")
         places()
