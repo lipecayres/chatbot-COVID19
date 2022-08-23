@@ -4,12 +4,6 @@ import doubts
 import register
 import survey
 
-def opening():
-    print()
-    print("Olá, seja bem-vindo(a)")
-    print("Eu sou a Cora, assistente virtual do projeto TQT Covid-19!")
-    print()
-
 
 def menu():
 
