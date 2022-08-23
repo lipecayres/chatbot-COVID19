@@ -8,6 +8,7 @@ import survey
 def menu():
 
     print("Como posso te ajudar hoje??")
+    print()
     print("1- Boletim de notícias")                         #news
     print("2- Precisa fazer o teste para COVID-19?")        #survey
     print("3- Locais de testagem / vacinação")              #places
