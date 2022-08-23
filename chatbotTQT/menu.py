@@ -43,22 +43,28 @@ def intEntry():
             n = int(n)
             break
         except ValueError:
+            print()
             print("Entrada inválida, tente novamente.")
     return n
 
 
 def endChat():
     print("O que você quer fazer agora?")
+    print()
     print("1- Ver de novo as opções de ajuda")
     print("2- Encerrar nosso papo")
+    print()
 
     cursor = intEntry()
     if cursor == 1:
         menu()
     
     elif cursor == 2:
+        print()
         print("Obrigado pela nossa conversa, se precisar pode me chamar de novo!")
+        print()
 
     else:
+        print()
         print("Entrada inválida, tente novamente.")
         endChat()
