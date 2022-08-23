@@ -26,8 +26,10 @@ def register ():
         if len(key) >= 6:
             break
         else:
+            print()
             print("Senha inválida. Minímo de 6 dígitos.")
 
+    print()
     print("Legal. Agora você pode conferir o seu laudo digital!")
     print()
     print("Acesse este link que você poderá verificar os seus resultados:")
