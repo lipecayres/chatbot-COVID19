@@ -8,16 +8,19 @@ def register ():
     print()
     print("Seu login e senha estão no seu termo de assentimento com a participação no projeto!")
     print()
-    
+
     print("Digite o seu cpf (só numeros):")
 
     while True:
-        cpf = menu.intEntry()
-        if len(cpf) == 11:
+        cpf = input("CPF: ")
+        if len(cpf) == 11 and cpf.isdigit() == True:
             break
         else:
             print("CPF inválido. Tente novamente.")
     
+    print()
+    print("Digite sua senha:")
+
     while True:
         key = input("Senha: ")
         if len(key) >= 6:
@@ -30,5 +33,6 @@ def register ():
     print("Acesse este link que você poderá verificar os seus resultados:")
     print()
     print("https://tqtcovid.com/m03_prontuario_individual/")
+    print()
     print()
     menu.endChat()
